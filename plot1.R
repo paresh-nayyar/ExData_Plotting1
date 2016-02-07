@@ -8,5 +8,5 @@ my_data[,3:8] <- as.data.frame(sapply(my_data[,3:8],as.numeric))
 my_data       <- subset(my_data,Date <= "2007-02-02" & Date >= "2007-02-01")
 
 with(my_data,hist(Global_active_power,col = "red",main = "Global Active Power",xlab = "Global Active Power (kilowatts)"))
-dev.copy(png,file = "plot1.png",width=400,height=350)
+dev.copy(png,file = "plot1.png",width=480,height=480)
 dev.off()
